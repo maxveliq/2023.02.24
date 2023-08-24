@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .div2 {
+            height: 314px;
+            width: 256px;
+            position: absolute;
+            overflow: hidden;
+            left: 0%;
+            background-image: url(pics/walking.png);
+            left: 0%;
+            background-color: none;
+            animation: walk 1s infinite steps(8), move 4s infinite linear alternate, turn 4s infinite linear;
+        }
+        @keyframes move {
+            0% {
+                left: 0%;
+            }
+            50%{
+                left: calc(100% - 256px);
+            }
+        }
+        @keyframes walk {
+            0%{
+                background-position: 0 0 ;
+            }
+            100% {
+                background-position: -2048px 0;
+            }
+        }
+        @keyframes turn {
+            0% {
+                transform: rotateY(0);
+            }
+            50% {
+                transform: rotateY(0);
+            }
+            50.001% {
+                transform: rotateY(180deg);
+            }
+            99.999% {
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div2">
+
+    </div>
+</body>
+</html>

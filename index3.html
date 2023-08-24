@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            max-width: 100%;
+        }
+
+        .top {
+            width: 100%;
+            height: 55px;
+            background-color: rgb(24, 23, 23);
+        }
+
+        .forbes-label {
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: -54px;
+        }
+
+        .three-line {
+            background-color: none;
+            width: 39px;
+            height: 39px;
+            margin: 7px 10px;
+            display: inline-block;
+            transform: scale(0.5);
+        }
+
+        .line {
+            background-color: white;
+            width: 40px;
+            height: 7px;
+        }
+
+        .line+.line {
+            margin-top: 6px;
+        }
+
+        .buttons-top {
+            width: 250px;
+            height: 55px;
+            margin-left: calc(100% - 250px);
+            display: inline-block;
+            position: absolute;
+            margin-top: -50px;
+        }
+
+        .top .buttons-top button {
+            width: 80px;
+            height: 40px;
+            border-style: none;
+            margin-top: 7px;
+            margin-left: 15px;
+            border-radius: 10px;
+            background-color: rgb(216, 16, 16);
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .top .buttons-top button:nth-child(2) {
+            width: 80px;
+            height: 40px;
+            border-style: none;
+            margin-top: 7px;
+            margin-left: 15px;
+            border-radius: 10px;
+            background-color: rgb(24, 23, 23);
+            text-decoration: none;
+        }
+
+        .first-block {
+            width: 25%;
+            height: calc(100% - 55px);
+            background-color: #e0e0e0;
+            display: inline-block;
+            top: 0;
+            position: relative;
+        }
+
+        .first-block img {
+            margin: 50px;
+        }
+
+        .first-block div {
+            width: 60%;
+            height: 100px;
+            margin-left: 75px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .second-block {
+            width: 75%;
+            height: 78%;
+            background-color: #e7e7e7;
+            display: inline-block;
+            top: 25%;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .second-block .bio {
+            padding: 100px;
+            padding-bottom: 20px;
+            padding-top: 30px;
+            padding-right: 200px;
+            font-size: 18px;
+        }
+
+        .second-block button {
+            background-color: rgb(32, 82, 218);
+            padding: 7px;
+            border-radius: 5px;
+            border-style: none;
+            margin-left: 101px;
+        }
+
+        .second-block .hr1 {
+            margin: 70px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: auto;
+            height: 2px;
+            background-color: black;
+        }
+
+        .networth {
+            text-align: center;
+        }
+
+        .networth h1 {
+            font-size: 45px;
+        }
+
+        .third-block {
+            width: 75%;
+            height: calc(25% - 55px);
+            background-color: #676767;
+            position: absolute;
+            display: inline-block;
+            z-index: 0;
+        }
+
+        .third-block div {
+            color: white;
+            font-size: 20px;
+            margin-left: 70px;
+            margin-top: 38px;
+            float: left;
+        }
+
+        .general-nav {
+            width: 100%;
+            height: 500px;
+            background-color: #e7e7e7;
+            z-index: 3;
+        }
+
+        .general-nav img {
+            margin: 50px;
+            margin-top: 80px;
+            border: 3px solid black;
+            transition: 1s;
+        }
+
+        .general-nav div {
+            display: inline-block;
+            max-width: 450px;
+        }
+
+        .general-nav div div {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: none;
+            color: rgb(0, 12, 39);
+        }
+
+        .general-nav div div a {
+            color: rgb(0, 12, 39);
+        }
+
+        .general-nav img:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+
+<body style="width: 100vw; height: 100vh;">
+    <div class="top">
+
+        <div class="three-line">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <h1 class="forbes-label">Forbes</h1>
+
+        <div class="buttons-top">
+            <button><a
+                    href="https://account.forbes.com/subscribe?eventSource=header&redirect=https://www.forbes.com/home_europe/"
+                    target="_blank">Subscribe</a></button>
+            <button><a
+                    href="https://account.forbes.com/subscribe?eventSource=header&redirect=https://www.forbes.com/home_europe/"
+                    target="_blank">Sign in</a></button>
+        </div>
+    </div>
+
+    <div class="first-block">
+        <img width="250px" height="250px" src="EELOONMA.png">
+        <div>“I operate on the physics approach to analysis. You boil things down
+            to the first principles or fundamental truths in a particular
+            area and then you reason up from there. “
+            <br>
+            <b>ELON MUSK</b>
+        </div>
+    </div>
+
+    <div class="third-block">
+        <div>1.</div>
+        <div>Elon Musk</div>
+        <div>$219 B</div>
+        <div>United States</div>
+        <div>Tesla, SpaceX</div>
+        <div>Automotive</div>
+    </div>
+
+    <div class="second-block">
+        <div class="bio">Elon Musk cofounded six companies including electric
+            car maker Tesla, rocket producer
+            SpaceX and tunneling startup Boring Company.</div>
+        <button><a href="https://www.forbes.com/profile/elon-musk/?list=billionaires" target="_blank">Full
+                Profile</a></button>
+        <div class="hr1"></div>
+        <div class="networth">
+            <h2>NET WORTH 2022</h2>
+            <h1>$219 B</h1>
+        </div>
+    </div>
+    <div class="general-nav">
+        <div>
+            <a href="index3_tesla.html"><img class="navig" src="tesla.jpg" height="200px" alt="picture of tesla"></a>
+            <div>
+                <a href="index3_tesla.html">Tesla</a>
+            </div>
+        </div>
+
+        <div>
+            <a href="index3_spacex.html"><img class="navig" src="spacex.jpg" height="200px" alt="spacex picture"></a>
+            <div>
+                <a href="index3_spacex.html">Space X</a>
+            </div>
+        </div>
+
+        <div>
+            <a href="index3_bio.html"><img src="EELOONMAA2.png" height="200px" alt="Elon Musk"></a>
+            <div>
+                <a class="navig" href="index3_bio.html">Biography</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

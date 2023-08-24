@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .top {
+            width: 100%;
+            height: 55px;
+            background-color: rgb(24, 23, 23);
+        }
+
+        .forbes-label {
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: -54px;
+        }
+
+        .three-line {
+            background-color: none;
+            width: 39px;
+            height: 39px;
+            margin: 7px 10px;
+            display: inline-block;
+            transform: scale(0.5);
+            transition: .4s ease-in-out ;
+        }
+
+        .three-line:hover {
+            transform: scale(0.7);
+        }
+
+        .line {
+            background-color: white;
+            width: 40px;
+            height: 7px;
+        }
+
+        .line+.line {
+            margin-top: 6px;
+        }
+
+        .buttons-top {
+            width: 300px;
+            height: 55px;
+            margin-left: calc(100% - 300px);
+            display: inline-block;
+            position: absolute;
+            margin-top: -50px;
+        }
+
+        .top .buttons-top button {
+            width: 80px;
+            height: 40px;
+            border-style: none;
+            margin-top: 7px;
+            margin-left: 15px;
+            border-radius: 10px;
+            background-color: rgb(216, 16, 16);
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .top .buttons-top button:nth-child(2) {
+            width: 80px;
+            height: 40px;
+            border-style: none;
+
+            margin-top: 7px;
+            margin-left: 15px;
+            border-radius: 10px;
+            background-color: rgb(24, 23, 23);
+            text-decoration: none;
+        }
+
+        .top .buttons-top button:nth-child(3) {
+            width: 80px;
+            height: 40px;
+            border-style: none;
+
+            margin-top: -10px;
+            margin-left: 15px;
+            border-radius: 10px;
+            background-color: rgb(236, 236, 236);
+            text-decoration: none;
+            transform: translate(0%, 40%);
+        }
+
+        .yt {
+            margin-top: -300px;
+            display: inline-block;
+            transform: translate(0, -160px);
+            padding: 30px;
+        }
+
+        .text {
+            display: inline-block;
+            width: 700px;
+            height: 400px;
+            font-size: 30px;
+            transform: translate(0, -160px);
+        }
+
+        .rocket{
+            transition: 1s ease-in;
+        }
+
+        .rocket:hover {
+            transform: translate(0, -1000%);
+        }
+
+
+    </style>
+</head>
+
+<body background="background.jpg">
+    <div class="top">
+
+        <div class="three-line">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <h1 class="forbes-label">Forbes</h1>
+        <div class="buttons-top">
+            <button><a
+                    href="https://account.forbes.com/subscribe?eventSource=header&redirect=https://www.forbes.com/home_europe/"
+                    target="_blank">Subscribe</a></button>
+            <button><a
+                    href="https://account.forbes.com/subscribe?eventSource=header&redirect=https://www.forbes.com/home_europe/"
+                    target="_blank">Sign in</a></button>
+            <button><a href="index3.html"><img height="40px" width="40px" src="home.png" alt="home"></a></button>
+        </div>
+    </div>
+    <img class="rocket" src="rocket.png" width=100px>
+
+    <div class="yt">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/mY-fSnKTLqw" 
+        title="YouTube video player"
+        allow="accelerometer;
+        autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="text">
+        <span>
+            Space Exploration Technologies Corp. (SpaceX) is an American spacecraft manufacturer, launcher, and a satellite communications corporation headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the stated goal of reducing space transportation costs to enable the colonization of Mars. The company manufactures the Falcon 9, Falcon Heavy, and Starship launch vehicles, several rocket engines, Cargo Dragon and Crew Dragon spacecraft, and Starlink communications satellites.
+        </span>
+    </div>
+    
+</body>
+
+</html>
